@@ -1,0 +1,310 @@
+@import
+url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 95%;
+    max-width: 70em;
+    margin: 0 auto;
+}
+
+/* Typography
+=========== =============*/
+
+h1 {
+    font-weight: 300;
+    font-size: 1.7rem;
+}
+
+.title {
+    font-size: 2.5rem;
+}
+
+
+
+@media (min-width:60rem) {
+    .title {
+        font-size: 3.7rem;
+    }
+}
+
+/* Header
+=========== =============*/
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 1em;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 1em;
+}
+
+nav a {
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: .5em;
+    color: #FFF;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #DDD;
+}
+
+@media (min-width:60rem) {
+    .logo {
+        float: left;
+    }
+
+    .nav {
+        float: right;
+    }
+}
+
+/* Buttons */
+
+.button {
+    display: inline-block;
+    font-size: 1.15rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: .5em 1.75em;
+}
+
+.button-accent {
+    border-color: #00FF6C;
+    color: #00FF6C;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+    background: #00ff6C;
+    color: #232323;
+
+}
+
+@media (min-width:60rem) {
+    .button {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Home Hero
+=========== =============*/
+.home-hero {
+    background-image: url(../assets/carnationbig.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10em 0;
+    color: #FFF;
+}
+
+@media (min-width: 60rem) {
+    .home-hero {
+        height: 100vh;
+        padding-top: 35vh;
+    }
+}
+
+
+.logo {
+    mix-blend-mode: multiply;
+}
+
+/* Home History
+=========== =============*/
+
+.home-history-textbox {
+    background-color: crimson;
+    padding: 4em;
+    width: 100vw;
+    outline: 2px solid #FFF;
+    outline-offset: -2.5em;
+    color: #FFF;
+    position: relative;
+}
+
+.home-history-textbox h1 {
+    position: absolute;
+    background-color: crimson;
+    top: -.05em;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 .145em;
+    white-space: nowrap;
+}
+
+@media (min-width: 25rem) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .home-history-textbox h1 {
+        top: -.45rem;
+    }
+}
+
+@media (max-width: 59.99rem) {
+    .home-history-textbox {
+        color: #FFF;
+        left: -1.5em;
+    }
+
+}
+
+@media (min-width: 60rem) {
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    .home-history-textbox h1 {
+        top: -1.2rem;
+        text-align: left;
+        transform: translateX(-4.3em);
+    }
+
+    .home-history-textbox {
+        width: 70%;
+        top: -3.4em;
+        /*opacity: 0.85;*/
+        text-align: left;
+        left: -20.5%;
+        top: -13em;
+        box-shadow: 0 0 3em 0 rgba(0,0,0,.7);
+        padding: 4em;
+
+    }
+
+    .home-history {
+        background-image: url(../assets/BigPicture.jpg);
+        background-position: center;
+        background-repeat: cover;
+        background-image: repeat;
+        padding: 10em;
+
+
+    }
+}
+
+/* Founders
+=========== =============
+===Margin Issue Here====*/
+
+.founders {
+    background-image: url(../assets/blackdiamonds.png);
+    background-position: center;
+    background-size: cover;
+    color: #FFF;
+    outline: 4px double #FFF;
+    outline-offset: -2.5em;
+}
+
+.founders h1{
+    position: relative;
+    top: -2em;
+    text-align: center;
+    margin: 0;
+}
+
+.founders p {
+    font-size: 1.5em;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+    top: -2em;
+}
+
+
+@media (min-width: 60rem) {
+    .founders {
+        height: 100vh;
+        padding-top: 35vh;
+    }
+}
+
+@media (max-width: 59.99rem) {
+    .founders {
+        outline: none;
+        padding: 10em 0em;
+
+    }
+
+    .founders p {
+        font-size: 1.0em;
+        text-align: center;
+        white-space: nowrap;
+    }
+}
+
+
+/*Footer
+=========== =============*/
+
+
+    footer {
+        background: crimson;
+        color: #FFF;
+        padding-top: 1em;
+        padding-bottom: 5em;
+        outline: 2px solid #FFF;
+        outline-offset: -1em;
+        width: 100%;
+    }
+
+    .unstyled-list {
+        list-style: none;
+        padding-bottom: 1em;
+        position: center;
+    }
+
+
+@media (min-width: 60rem) {
+
+    footer {
+        background: crimson;
+        color: #FFF;
+        padding-top: 1em;
+        padding-bottom: 85em;
+        outline: 2px solid #FFF;
+        outline-offset: -1.5em;
+        width: 100%;
+
+
+    }
+
+    .unstyled-list {
+        width: 33%;
+        list-style: none;
+        float: left;
+        padding-bottom: 1em;
+    }
+}
