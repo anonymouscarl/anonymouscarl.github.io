@@ -121,7 +121,8 @@ nav a:focus {
 /* Home Hero
 =========== =============*/
 .home-hero {
-    background-image: url(../assets/carnationbig.jpg);
+    /*background-image: url(../assets/carnationbig.jpg);*/
+    background-image: url(../assets/plot.jpg);
     background-size: cover;
     background-position: center;
     padding: 10em 0;
