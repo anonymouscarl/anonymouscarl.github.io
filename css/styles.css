@@ -94,31 +94,45 @@ nav a:focus {
 
 /* Buttons */
 
+@media (min-width:60rem) {
+    .button {
+        display: none;
+    }
+}
+
 .button {
+    position: relative;
     display: inline-block;
     font-size: 1.15rem;
     text-decoration: none;
     text-transform: uppercase;
     border-width: 2px;
     border-style: solid;
+    border-radius: 7px;
     padding: .5em 1.75em;
+    background-color: red;
+    top: -20rem;
+    left: -17rem;
 }
 
 .button-accent {
-    border-color: #00FF6C;
-    color: #00FF6C;
+    border-color: #000;
+    color: #FFF;
 }
 
 .button-accent:hover,
 .button-accent:focus {
-    background: #00ff6C;
-    color: #232323;
+    color: crimson;
+    background-color: #fffdd0;
 
 }
 
-@media (min-width:60rem) {
+@media (max-width:60rem) {
     .button {
         font-size: 1.5rem;
+        display: none;
+        top: -20rem;
+        left: -17rem;
     }
 }
 
